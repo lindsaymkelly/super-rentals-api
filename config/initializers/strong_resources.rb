@@ -31,4 +31,14 @@
 #
 # For additional documentation, see https://jsonapi-suite.github.io/strong_resources
 StrongResources.configure do
+  strong_resource :rental do
+    attribute :title, :string
+    attribute :owner, :string
+    attribute :city, :string
+    attribute :category, :string
+    attribute :bedrooms, :integer
+    attribute :image, :string
+    attribute :description, :string
+    attribute :type, :string
+  end
 end
