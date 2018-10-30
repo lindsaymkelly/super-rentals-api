@@ -20,5 +20,4 @@ class SerializableRental < JSONAPI::Serializable::Resource
   attribute :bedrooms
   attribute :image
   attribute :description
-  attribute :type
 end

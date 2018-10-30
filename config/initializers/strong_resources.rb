@@ -39,6 +39,5 @@ StrongResources.configure do
     attribute :bedrooms, :integer
     attribute :image, :string
     attribute :description, :string
-    attribute :type, :string
   end
 end

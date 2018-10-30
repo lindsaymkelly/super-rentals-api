@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20181030064650) do
     t.integer  "bedrooms"
     t.string   "image"
     t.string   "description"
-    t.string   "type"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
