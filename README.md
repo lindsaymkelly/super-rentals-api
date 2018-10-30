@@ -1,6 +1,6 @@
 # Super Rentals API
 
-This is a basic Rails API built with the (http://jsonapi-rb.org)[JSONAPI-rb] gem. It can be used on its own or interacted with through my Super Rentals (https://github.com/lindsaymkelly/super-rentals)[Ember App]
+This is a basic Rails API built with the [http://jsonapi-rb.org](JSONAPI-rb) gem. It can be used on its own or interacted with through my Super Rentals [https://github.com/lindsaymkelly/super-rentals](Ember App)
 
 ## To Setup
 
@@ -14,7 +14,7 @@ This is a basic Rails API built with the (http://jsonapi-rb.org)[JSONAPI-rb] gem
 
 * To run the app: `rails s`
 
-You can see the returned data by visiting (http://localhost:3000/api/v1/rentals)[http://localhost:3000/api/v1/rentals] or by setting up the previously mentioned Ember App
+You can see the returned data by visiting [http://localhost:3000/api/v1/rentals](http://localhost:3000/api/v1/rentals) or by setting up the previously mentioned Ember App
 
 Recommended Queries:
 
