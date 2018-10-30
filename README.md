@@ -1,24 +1,27 @@
-# README
+# Super Rentals API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a basic Rails API built with the (http://jsonapi-rb.org)[JSONAPI-rb] gem. It can be used on its own or interacted with through my Super Rentals (https://github.com/lindsaymkelly/super-rentals)[Ember App]
 
-Things you may want to cover:
+## To Setup
 
-* Ruby version
+* `git clone <repository-url>`
 
-* System dependencies
+* `cd super-rentals-api`
 
-* Configuration
+* `bundle install`
 
-* Database creation
+* To create Database and populate with sample data: `rake db:create` then `rake db:migrate` and `rake db:seed`
 
-* Database initialization
+* To run the app: `rails s`
 
-* How to run the test suite
+You can see the returned data by visiting (http://localhost:3000/api/v1/rentals)[http://localhost:3000/api/v1/rentals] or by setting up the previously mentioned Ember App
 
-* Services (job queues, cache servers, search engines, etc.)
+Recommended Queries:
 
-* Deployment instructions
+* visit `/api/v1/rentals?sort=city` to see the rentals listed by city (city can be subbed out for any of the attributes)
 
-* ...
+* visit `/api/v1/rentals?filter[city]=New York` to see properties in New York (can be changed with any city, but only city filtering is currently allowed)
+
+* paginate the results by visiting `/api/v1/rentals?page[size]=2&page[number]=2`
+
+More updates to come as I continue to build!

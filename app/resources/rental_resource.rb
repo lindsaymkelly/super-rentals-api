@@ -6,6 +6,7 @@ class RentalResource < ApplicationResource
   type :rentals
   # Associate to a Model object so we know how to persist.
   model Rental
+  allow_filter :city
   # Customize your resource here. Some common examples:
   #
   # === Allow ?filter[name] query parameter ===
