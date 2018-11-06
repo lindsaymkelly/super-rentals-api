@@ -10,6 +10,7 @@ class RentalsController < ApplicationController
   # Invalid value types will log or raise based on the configuration
   # ActionController::Parameters.action_on_invalid_parameters
   before_action :apply_strong_params, only: [:create, :update]
+  # skip_before_action :verify_authenticity_token, :only => [:index]
 
   # Start with a base scope and pass to render_jsonapi
   def index
